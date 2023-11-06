@@ -1,9 +1,9 @@
 # REQUISITOS FUNCIONAIS
 
-- [] O usuário deve poder criar uma nova transação;
-- [] O usuário deve poder obter um resumo da sua conta;
-- [] O usuário deve poder listar todas transações que já ocorreu na sua conta;
-- [] O usuário deve poder visualizar uma única transação;
+- [x] O usuário deve poder criar uma nova transação;
+- [x] O usuário deve poder obter um resumo da sua conta;
+- [x] O usuário deve poder listar todas transações que já ocorreu na sua conta;
+- [x] O usuário deve poder visualizar uma única transação;
 
 # REQUISITOS NÃO FUNCIONAIS
 
