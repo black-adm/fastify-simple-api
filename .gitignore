@@ -3,5 +3,11 @@ node_modules
 .eslintrc.json
 .env
 .env.local
+.env.test
 
 /src/database/app.db
+/src/database/test.db
+
+/src/database/migrations/*
+
+
