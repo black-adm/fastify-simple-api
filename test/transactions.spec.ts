@@ -86,8 +86,8 @@ describe('Transactions routes', () => {
     const createTransactionResponse = await request(app.server)
       .post('/transactions')
       .send({
-        title: 'Receive transfer from Nubank',
-        amount: 450,
+        title: 'Credit transaction',
+        amount: 5000,
         type: 'credit',
       })
 
@@ -97,8 +97,8 @@ describe('Transactions routes', () => {
       .post('/transactions')
       .set('Cookie', cookies)
       .send({
-        title: 'Netflix payment',
-        amount: -69,
+        title: 'Debit transaction',
+        amount: 2000,
         type: 'debit',
       })
 
@@ -108,7 +108,7 @@ describe('Transactions routes', () => {
       .expect(200)
 
     expect(summaryResponse.body.summary).toEqual({
-      amount: 381,
+      amount: 3000,
     })
   })
 })
